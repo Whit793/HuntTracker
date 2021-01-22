@@ -39,7 +39,7 @@ namespace HuntTracker.Controllers
         {
             repo.InsertHunt(huntToInsert);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Hunt");
         }
     }
 }

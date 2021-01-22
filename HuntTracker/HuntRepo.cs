@@ -32,7 +32,7 @@ namespace HuntTracker
 
        public void InsertHunt(Hunt huntToInsert)
         {
-            _conn.Execute("INSERT INTO HUNT_TRACKER.HUNTS (DATE, TIMEOFSTART, TIMEOFEND, SEASON, WEATHER, USEDSCENTCONTROL, NUMBEROFDOES, NUMBEROFBUCKS, HARVESTED, TREESTANDLOCATION) " +
+            _conn.Execute("INSERT INTO HUNTS (DATE, TIMEOFSTART, TIMEOFEND, SEASON, WEATHER, USEDSCENTCONTROL, NUMBEROFDOES, NUMBEROFBUCKS, HARVESTED, TREESTANDLOCATION) " +
                 "VALUES (@date, @timeofstart, @timeofend, @season, @weather, @usedscentcontrol, @numberofdoes, @numberofbucks, @harvested, @treestandlocation);",
                     new { Date = huntToInsert.Date, TimeOfStart = huntToInsert.TimeOfStart, TimeOfEnd = huntToInsert.TimeOfEnd, Season = huntToInsert.Season, Weather = huntToInsert.Weather,
                         UsedScentControl = huntToInsert.UsedScentControl, NumberOfDoes = huntToInsert.NumberOfDoes, NumberOfBucks = huntToInsert.NumberOfBucks, Harvested = huntToInsert.Harvested,
