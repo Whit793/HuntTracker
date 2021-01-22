@@ -1,0 +1,33 @@
+﻿@model Hunt
+
+<h3>@Model.HuntID Information </h3>
+
+<table class="table">
+    <tr>
+        <th>HuntID</th>
+        <th>Date</th>
+        <th>Time Of Start</th>
+        <th>Time Of End</th>
+        <th>Season</th>
+        <th>Weather</th>
+        <th>Used Scent Control</th>
+        <th>Number Of Does</th>
+        <th>Number Of Bucks</th>
+        <th>Harvested</th>
+        <th>Tree Stand Location</th>
+    </tr>
+    <tr>
+        <td>@Model.HuntID</td>
+        <td>@Model.Date</td>
+        <td>@Model.TimeOfStart</td>
+        <td>@Model.TimeOfEnd</td>
+        <td>@Model.Season</td>
+        <td>@Model.Weather</td>
+        <td>@Model.UsedScentControl</td>
+        <td>@Model.NumberOfDoes</td>
+        <td>@Model.NumberOfBucks</td>
+        <td>@Model.Harvested</td>
+        <td>@Model.TreeStandLocation</td>
+
+    </tr>
+</table>

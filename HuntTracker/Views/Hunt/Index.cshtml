@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Hunt>
+
+<h2>Hunts</h2>
+
+<div style="display:block">
+    <a href="/Hunt/InsertHunt/">Track a New Hunt</a>
+</div>
+<table class="table">
+    <tr>
+        <th>HuntID</th>
+        <th>Date</th>
+        <th>TimeOfStart</th>
+        <th>TimeOfEnd</th>
+        <th>Season</th>
+        <th>Weather</th>
+        <th>UsedScentControl</th>
+        <th>NumberOfDoes</th>
+        <th>NumberOfBucks</th>
+        <th>Harvested</th>
+        <th>TreeStandLocation</th>
+    </tr>
+    @foreach (var hunt in Model)
+    {
+        <tr>
+            <td><a href=/Hunt/ViewHunt/@hunt.HuntID>@hunt.HuntID</a></td>
+
+            
+            <td>@hunt.Date</td>
+            <td>@hunt.TimeOfStart</td>
+            <td>@hunt.TimeOfEnd</td>
+            <td>@hunt.Season</td>
+            <td>@hunt.Weather</td>
+            <td>@hunt.UsedScentControl</td>
+            <td>@hunt.NumberOfDoes</td>
+            <td>@hunt.NumberOfBucks</td>
+            <td>@hunt.Harvested</td>
+            <td>@hunt.TreeStandLocation</td>
+
+
+
+        </tr>
+    }
+</table>
